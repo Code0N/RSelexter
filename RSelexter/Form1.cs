@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace RSelexter
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            itemsTextBox.Clear();
+            resultLabel.Text = "Здесь будет случайно выбранная строка";
+        }
+
+        private void rselectButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
