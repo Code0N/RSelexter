@@ -25,7 +25,7 @@ namespace RSelexter
 
         private void rselectButton_Click(object sender, EventArgs e)
         {
-
+            resultLabel.Text = itemsTextBox.Lines[new Random().Next(0, itemsTextBox.Lines.Length)];
         }
     }
 }
